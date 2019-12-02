@@ -4,24 +4,25 @@
 {% block menu %}
 {% endblock %}
 {% block content %}
-        <div class="form_block" id="form_block">
+        <div class="input_block" id="input_block">
             <h1 class="header">Insert two numbers</h1>
-            <div class="mu_input_group">
+            <div class="my_input_group">
                 <label for="input_A">First Number</label>
-                <input type="number"  name="input_A" class=my_input id="input_A">
+                <input type="text"  name="input_A" class=my_input id="input_A">
                 <label for="input_B">Second Number</label>
-                <input type="number" name="input_B" class=my_input id="input_B">
+                <input type="text" name="input_B" class=my_input id="input_B">
             </div>
             <div class="btn-group" role="group" aria-label="api_button_group">
-                <button type="button" name="add_button" id="add_button" class="btn btn-secondary">Add</button>
-                <button type="button" name="subtract_button" id="subtract_button" class="btn btn-secondary">Subtract</button>
-                <button type="button" name="multiply_button" id="multiply_button" class="btn btn-secondary">Multiply</button>
-                <button type="button" name="divide_button" id="divide_button" class="btn btn-secondary">Divide</button>
+                <button type="button" name="add_button" id="add" class="btn btn-secondary">Add</button>
+                <button type="button" name="subtract_button" id="subtract" class="btn btn-secondary">Subtract</button>
+                <button type="button" name="multiply_button" id="multiply" class="btn btn-secondary">Multiply</button>
+                <button type="button" name="divide_button" id="divide" class="btn btn-secondary">Divide</button>
             </div>
         </div>
 {% endblock %}
 {% block scripts %}
-    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.4.0.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 {% endblock %}
 
 

@@ -1,3 +1,12 @@
 body {
     font-family: Arial, sans-serif;
 }
+.success_div {
+    padding-top: 30px;
+}
+.success_div p {
+    font-weight: bold;
+}
+.error_div {
+    width: 40px;
+}
