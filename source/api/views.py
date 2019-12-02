@@ -12,16 +12,12 @@ def numbers_add_v1(request, *args, **kwargs):
         if type(first_number) and type(second_number) == int:
             numbers_sum = first_number + second_number
             response = JsonResponse({'answer': numbers_sum})
-            print(response)
         else:
             response = JsonResponse({'error': 'You must only submit digits!'})
             response.status_code = 400
-            print(response)
     else:
         response = JsonResponse({'error': 'No data provided!'})
         response.status_code = 400
-        print(response)
-    print(response)
     return response
 
 

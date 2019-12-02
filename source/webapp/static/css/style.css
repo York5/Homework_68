@@ -2,11 +2,29 @@ body {
     font-family: Arial, sans-serif;
 }
 .success_div {
-    padding-top: 30px;
+    padding: 10px;
+    width: 30%;
+    color: white;
+    margin-bottom: 5px;
 }
-.success_div p {
-    font-weight: bold;
-}
+
 .error_div {
-    width: 40px;
+    padding: 10px;
+    width: 30%;
+    color: white;
+    margin-bottom: 5px;
+}
+.my_header {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.input_block {
+    margin-bottom: 30px;
+}
+.my_btn_group {
+    margin-top: 20px;
+}
+.my_input {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

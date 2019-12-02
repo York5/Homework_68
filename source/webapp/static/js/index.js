@@ -7,15 +7,14 @@ let divide_button = $(document.getElementById('divide'));
 let input_A = $(document.getElementById('input_A'));
 let input_B = $(document.getElementById('input_B'));
 
-function jqueryAjaxError(response, status) {
-    console.log(response);
-    console.log(status);
-    console.log('error');
-}
+
+let answer_div = $(document.createElement("div"));
+let answer = $(document.createElement("p"));
+answer_div.append(answer);
+container.append(answer_div);
 
 
 function onButtonClick(event) {
-
     $.ajax({
         url: event.target.id,
         method: 'post',
@@ -31,24 +30,16 @@ function onButtonClick(event) {
 }
 
 function successFunction(response) {
-    let answer_div = $(document.createElement("div"));
     answer_div.css("background-color", "green");
     answer_div.addClass("success_div");
-    let answer = document.createElement("p");
-    answer.innerText = "Your Answer:" + " " + response.answer;
-    answer_div.append(answer);
-    container.append(answer_div);
+    answer.text("Your Answer:" + " " + response.answer);
     console.log(response);
 }
 
 function errorFunction(response) {
-    let answer_div = $(document.createElement("div"));
     answer_div.css("background-color", "red");
     answer_div.addClass("error_div");
-    let answer = $(document.createElement("p"));
     answer.text($.parseJSON(response.responseText).error);
-    answer_div.append(answer);
-    container.append(answer_div);
 }
 
 

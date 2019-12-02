@@ -5,18 +5,19 @@
 {% endblock %}
 {% block content %}
         <div class="input_block" id="input_block">
-            <h1 class="header">Insert two numbers</h1>
+            <h1 class="header, my_header">Insert two numbers</h1>
             <div class="my_input_group">
-                <label for="input_A">First Number</label>
+                <label for="input_A"><b>A: </b></label>
                 <input type="text"  name="input_A" class=my_input id="input_A">
-                <label for="input_B">Second Number</label>
+                <br />
+                <label for="input_B"><b>B: </b></label>
                 <input type="text" name="input_B" class=my_input id="input_B">
             </div>
-            <div class="btn-group" role="group" aria-label="api_button_group">
-                <button type="button" name="add_button" id="add" class="btn btn-secondary">Add</button>
-                <button type="button" name="subtract_button" id="subtract" class="btn btn-secondary">Subtract</button>
-                <button type="button" name="multiply_button" id="multiply" class="btn btn-secondary">Multiply</button>
-                <button type="button" name="divide_button" id="divide" class="btn btn-secondary">Divide</button>
+            <div class="btn-group, my_btn_group" role="group" aria-label="api_button_group">
+                <button type="button" name="add_button" id="add" class="btn btn-primary">Add</button>
+                <button type="button" name="subtract_button" id="subtract" class="btn btn-primary">Subtract</button>
+                <button type="button" name="multiply_button" id="multiply" class="btn btn-primary">Multiply</button>
+                <button type="button" name="divide_button" id="divide" class="btn btn-primary">Divide</button>
             </div>
         </div>
 {% endblock %}
